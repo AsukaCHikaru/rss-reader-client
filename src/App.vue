@@ -1,7 +1,11 @@
 <script>
 import axios from 'axios';
+import Card from './components/Card.vue'
 
 export default {
+  components: {
+    Card,
+  },
   data() {
     return {
       rawList: [],
@@ -55,15 +59,13 @@ export default {
 <template>
 <div>
   <ul>
-   <li v-for="item in list">
-    <a :href="item.link" target="_blank" rel="noopener noreferrer">
-      <h3>{{ item.title }}</h3>
-    </a>
-  </li>
+   <Card v-for="item in list" :item="item" />
   </ul>
 </div>
 </template>
 
 <style scoped>
-
+ul {
+  list-style: none;
+}
 </style>
