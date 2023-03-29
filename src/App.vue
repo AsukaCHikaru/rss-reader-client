@@ -65,7 +65,16 @@ export default {
 </template>
 
 <style scoped>
+div {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 ul {
   list-style: none;
+  overflow: scroll;
+  max-height: 100vh;
 }
 </style>

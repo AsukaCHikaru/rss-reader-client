@@ -2,10 +2,10 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  background-color: #263238;
 }
 
 #app {
-  background-color: #263238;
   padding: 40px 0;
   height: 100%;
 }
